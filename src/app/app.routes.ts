@@ -45,10 +45,20 @@ export const routes: Routes = [
         loadComponent: () => import('./dashboard/Pages/users/users.component'),
       },
       {
-        title: 'View Transition',
-        path: 'view-transition',
+        title: 'View Transition 1',
+        path: 'view-transition-1',
         loadComponent: () =>
-          import('./dashboard/Pages/view-transition/view-transition.component'),
+          import(
+            './dashboard/Pages/view-transition/view-transition1.component'
+          ),
+      },
+      {
+        title: 'View Transition 2',
+        path: 'view-transition-2',
+        loadComponent: () =>
+          import(
+            './dashboard/Pages/view-transition/view-transition2.component'
+          ),
       },
 
       {
