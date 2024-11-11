@@ -1,14 +1,17 @@
 import { Component, signal } from '@angular/core';
+import { TitleComponent } from '../../../shared/title/title.component';
 
 type Grade = 'A' | 'B' | 'F';
 
 @Component({
   selector: 'app-control-flow',
   standalone: true,
-  imports: [],
+  imports: [TitleComponent, TitleComponent],
   templateUrl: './control-flow.component.html',
 })
 export default class ControlFlowComponent {
+  title = 'Control Flow';
+
   // SIGNAL es un observable que emite valores de manera reactiva en tiempo real sin la necesidad de un ciclo de vida.
   // Las señales permiten con precisión quirúrgica, saber
   // en dónde necesita Angular cambiar el valor de una
